@@ -13,4 +13,5 @@ curl -X POST -d "name=John" http://localhost:8080
 curl -H 'Host:example.com.' http://localhost:8080/
 
 # リクエストヘッダーとボディを送信し、レスポンスヘッダーを取得する
+curl -X POST -d "name=John" -H 'Host:example.com.' -H 'SampleHeader:TEST' http://localhost:8080
 curl -X POST -d "name=John" -H 'Host:example.com.' -H 'SampleHeader:TEST' -v http://localhost:8080
